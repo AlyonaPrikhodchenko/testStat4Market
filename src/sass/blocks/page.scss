@@ -9,5 +9,9 @@
   margin: 0 auto;
   padding: 0;
 
-  color: $color-accent;
+  @include fonts();
+}
+
+.page__header {
+  margin-bottom: 5px;
 }

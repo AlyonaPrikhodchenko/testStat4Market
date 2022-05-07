@@ -1,0 +1,41 @@
+.breadcrumbs {
+  display: flex;
+}
+
+.breadcrumbs__item:not(:last-child) {
+  position: relative;
+  margin-right: 26px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -20px;
+    width: 10px;
+    height: 1px;
+    background-color: $color-general;
+    opacity: 0.5;
+  }
+}
+
+.breadcrumbs__link {
+  text-decoration: none;
+
+  @include fonts (400, 16px, $color-general, 119%);
+  opacity: 0.5;
+}
+
+.breadcrumbs__link[href] {
+  &:hover {
+    opacity: 1;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $color-accent;
+    outline-offset: 2px;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+}

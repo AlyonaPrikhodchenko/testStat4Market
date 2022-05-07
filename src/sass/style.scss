@@ -1,17 +1,13 @@
-$color-general: #331a2f;
-$color-accent: #cf51ce;
-$color-shadow: rgb(234 93 187 / 25%);
-
-@mixin fonts ($weight: 400, $fs: 18px, $color: $color-general, $lh: 111%) {
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-size: $fs;
-  line-height: $lh;
-  font-weight: $weight;
-  color: $color;
-}
-
 @import "./global/fonts";
+@import "./_modules";
+@import "./_mixins";
 @import "./global/visually-hidden";
+@import "./blocks/container";
 @import "./blocks/page";
+@import "./blocks/header";
 @import "./blocks/logo";
+@import "./blocks/nav";
+@import "./blocks/button";
+@import "./blocks/breadcrumbs";
+@import "./blocks/main";
+@import "./blocks/courses";

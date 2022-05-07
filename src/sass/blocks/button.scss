@@ -1,0 +1,45 @@
+.button {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 104px;
+  min-height: 36px;
+  padding: 4px 20px;
+  text-decoration: none;
+  background-color: $color-accent;
+  border-radius: 6px;
+  cursor: pointer;
+
+  @include fonts (500, 14px, #ffffff, 197%);
+
+  &:hover:not(:disabled) {
+    opacity: 0.8;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $color-accent;
+    outline-offset: 2px;
+  }
+
+  &:active {
+    background-color: #ffffff;
+    box-shadow: 0 4px 25px $color-shadow;
+
+    @include fonts (500, 14px, $color-accent, 197%);
+
+    svg {
+      fill: $color-accent;
+    }
+  }
+
+  &:disabled {
+    opacity: 0.1;
+    cursor: no-drop;
+  }
+
+  &--disabled {
+    opacity: 0.1;
+    pointer-events: none;
+  }
+}

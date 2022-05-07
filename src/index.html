@@ -7,14 +7,75 @@
     <link rel="stylesheet" href="./css/style.min.css">
 </head>
 <body class="page__body">
-    <header class="page__header header">
-      <a class="header__logo logo" href="./index.html">
-        <span class="visually-hidden">Переход на главную страницу.</span>
-        <img src="./img/content/logo.svg" width="35" height="18" alt="Логотип stat4market">
-        <svg class="logo__name" width="94" height="14" aria-hidden="true" focusable="false">
-          <use xlink:href="./img/sprite.svg#stat4market"></use>
-        </svg>
-      </a>
+    <header class="page__header header container">
+      <h1 class="visually-hidden">Обучающие курсы от Stat4Market для поставщиков.</h1>
+      <div class="header__top">
+        <a class="header__logo logo" href="./index.html">
+          <span class="visually-hidden">Переход на главную страницу.</span>
+          <img src="./img/content/logo.svg" width="35" height="18" alt="Логотип stat4market">
+          <svg class="logo__name" width="94" height="14" aria-hidden="true" focusable="false">
+            <use xlink:href="./img/sprite.svg#stat4market"></use>
+          </svg>
+        </a>
+        <p class="header__description">Надежный сервис аналитики для поставщиков на маркетплейсы</p>
+        <nav class="header__nav nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="#">Аналитика</a></li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Обучение</a></li>
+          </ul>
+          <a class="nav__link nav__link--phone" href="tel:+74994503141"> 8 (499) 450-31-41</a>
+        </nav>
+        <a class="header__button button" href="./enter.html">
+          <svg width="14" height="14" fill="#ffffff" aria-hidden="true" focusable="false">
+            <use xlink:href="./img/sprite.svg#enter-line"></use>
+          </svg>
+          Войти
+        </a>
+        <button class="header__burger" type="button">
+          <span class="visually-hidden">Открыть меню.</span>
+          <svg width="42" height="28" fill="#cf51ce" aria-hidden="true" focusable="false">
+            <use xlink:href="./img/sprite.svg#burger"></use>
+          </svg>
+        </button>
+      </div>
+      <ol class="header__breadcrumbs breadcrumbs">
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="#">Главная</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link">Обучение</a>
+        </li>
+      </ol>
     </header>
+
+    <main class="page__main main">
+      <section class="main__courses courses">
+        <div class="courses__container container">
+          <h2 class="courses__header">
+            <span>Обучающие курсы</span> для поставщиков на маркетплейсы
+          </h2>
+          <p class="courses__price courses__price--wrapper">
+            от&nbsp;<span class="courses__price courses__price--accent">19 900</span>&nbsp;<span class="courses__price courses__price--currency">₽</span>
+          </p>
+          <p class="courses__description">
+            Обучающие курсы по работе и продвижению на маркетплейсах от практикующих селлеров
+          </p>
+          <p class="courses__description">
+            Добро пожаловать в Академию. Это место для эффективного обучения, где мы рассказываем, как работают маркетплейсы и никогда не вдаемся в теорию, которая не понадобится на практике.
+          </p>
+          <p class="courses__description">
+            Наши уроки помогут понять логику работы площадок и взять управление продажами в свои руки, а не действовать наугад. Становись экспертом в работе с маркетплейсами и увеличивай свою прибыль — мы разработали курсы, которые приведут тебя к результату быстро и захватывающе.
+          </p>
+        </div>
+      </section>
+
+      <section class="main__analytics analytics container">
+        <h2 class="analytics">
+          Как работает модуль Аналитика по API для Wildberries?
+        </h2>
+      </section>
+    </main>
 </body>
 </html>

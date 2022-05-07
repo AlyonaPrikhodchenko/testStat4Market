@@ -1,0 +1,53 @@
+.courses {
+  background-image: url("../img/background/superman-mobile.svg");
+  background-size: 135px 245px;
+  background-position: right top;
+  background-repeat: no-repeat;
+}
+
+.courses__container {
+  padding-top: 44px;
+}
+
+.courses__header {
+  width: 205px;
+  margin: 0;
+  margin-bottom: 24px;
+
+  @include fonts(700, 26px, $color-general, 150%);
+
+  span {
+    color: $color-accent;
+  }
+}
+
+.courses__price {
+  @include fonts (600, 22px, rgba(51, 26, 47, 0.8), 147%);
+
+  &--accent {
+    @include fonts (700, 38px, $color-accent, 145%);
+  }
+
+  &--currency {
+    @include fonts (400, 30px, rgba(51, 26, 47, 0.8), 100%);
+  }
+
+  &--wrapper {
+    display: flex;
+    align-items: baseline;
+    width: 256px;
+    margin: 0;
+    margin-bottom: 16px;
+  }
+
+  &--wrapper::before {
+    content: "";
+    display: block;
+    align-self: center;
+    width: 48px;
+    height: 48px;
+    margin-right: 25px;
+    background-image: url("../img/icons/spent.svg");
+    background-repeat: no-repeat;
+  }
+}
