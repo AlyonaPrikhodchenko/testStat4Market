@@ -27,7 +27,7 @@ function styles() {
     ]))
     .pipe(rename('style.min.css'))
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest('build/css'))
+    .pipe(gulp.dest('dist/css'))
     .pipe(browser.stream());
 }
 
@@ -36,14 +36,14 @@ function styles() {
 function html() {
     return gulp.src('src/*.html')
     .pipe(htmlmin({ collapseWhitespace: true }))
-    .pipe(gulp.dest('build'));
+    .pipe(gulp.dest('dist'));
 }
 
 // Scripts
 function scripts() {
     return gulp.src('src/js/**/*.js')
     .pipe(terser())
-    .pipe(gulp.dest('build/js'))
+    .pipe(gulp.dest('dist/js'))
     .pipe(browser.stream());
 }
 
@@ -52,12 +52,12 @@ function scripts() {
 function optimizeImages() {
     return gulp.src('src/img/**/*.{jpg,png}')
     .pipe(squoosh())
-    .pipe(gulp.dest('build/img'))
+    .pipe(gulp.dest('dist/img'))
 }
 
 function copyImages() {
     return gulp.src('src/img/**/*.{jpg,png}')
-    .pipe(gulp.dest('build/img'))
+    .pipe(gulp.dest('dist/img'))
 }
 
 // WebP
@@ -66,7 +66,7 @@ function createWebp() {
     .pipe(squoosh({
     webp: {}
     }))
-    .pipe(gulp.dest('build/img'));
+    .pipe(gulp.dest('dist/img'));
 }
 
 // SVG
@@ -74,7 +74,7 @@ function createWebp() {
 function svg() {
     return gulp.src(['src/img/**/*.svg', '!src/img/sprite-icons/*.svg'])
     .pipe(svgo())
-    .pipe(gulp.dest('build/img'));
+    .pipe(gulp.dest('dist/img'));
 }
 
 function sprite() {
@@ -84,7 +84,7 @@ function sprite() {
         inlineSvg: true
     }))
     .pipe(rename('sprite.svg'))
-    .pipe(gulp.dest('build/img'));
+    .pipe(gulp.dest('dist/img'));
 }
 
 // Copy
@@ -93,18 +93,18 @@ function copy(done) {
     gulp.src([
     'src/fonts/*.{woff2,woff}',
     'src/*.ico',
-    'src/manifest.webmanifest',
+    "src/manifest.webmanifest"
     ], {
     base: 'src'
     })
-    .pipe(gulp.dest('build'))
+    .pipe(gulp.dest('dist'))
     done();
 }
 
 // Clean
 
 function clean() {
-    return del('build');
+    return del('dist');
 };
 
 // Server
@@ -112,7 +112,7 @@ function clean() {
 function server(done) {
     browser.init({
     server: {
-        baseDir: 'build'
+        baseDir: 'dist'
     },
         cors: true,
         notify: false,

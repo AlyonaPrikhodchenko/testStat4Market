@@ -16,6 +16,8 @@
 
   &:hover:not(:disabled) {
     opacity: 0.8;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
   }
 
   &:focus-visible {
@@ -24,10 +26,9 @@
   }
 
   &:active {
+    color: $color-accent;
     background-color: #ffffff;
     box-shadow: 0 4px 25px $color-shadow;
-
-    @include fonts (500, 14px, $color-accent, 197%);
 
     svg {
       fill: $color-accent;

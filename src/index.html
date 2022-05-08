@@ -4,7 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>stat4market</title>
+    <link rel="shortcut icon" href="./favicon.ico">
+    <link rel="shortcut icon" type="image/png" sizes="32x32" href="./img/favicons/favicon-32x32.png">
+    <link rel="apple-touch-icon" href="./img/favicon/apple-icon-180x180.png">
+    <link rel="manifest" href="./manifest.webmanifest">
     <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="preload" href="./fonts/latoregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/latomedium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/latosemibold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/latobold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/latoregular.woff" type="font/woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/latomedium.woff" type="font/woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/latosemibold.woff" type="font/woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/latobold.woff" type="font/woff" as="font" crossorigin="anonymous">
 </head>
 <body class="page__body">
     <header class="page__header header container">
@@ -40,12 +52,20 @@
           </svg>
         </button>
       </div>
-      <ol class="header__breadcrumbs breadcrumbs">
-        <li class="breadcrumbs__item">
-          <a class="breadcrumbs__link" href="#">Главная</a>
+      <ol class="header__breadcrumbs breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+        <li class="breadcrumbs__item" itemprop="itemListElement" itemscope
+        itemtype="https://schema.org/ListItem">
+          <a class="breadcrumbs__link" href="#" itemprop="item">
+            <span itemprop="name">Главная</span>
+          </a>
+          <meta itemprop="position" content="1" />
         </li>
-        <li class="breadcrumbs__item">
-          <a class="breadcrumbs__link">Обучение</a>
+        <li class="breadcrumbs__item" itemprop="itemListElement" itemscope
+        itemtype="https://schema.org/ListItem">
+          <a class="breadcrumbs__link" href="#" itemprop="item">
+            <span itemprop="name">Обучение</span>
+          </a>
+          <meta itemprop="position" content="2" />
         </li>
       </ol>
     </header>
