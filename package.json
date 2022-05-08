@@ -9,7 +9,7 @@
     "lint": "npm run editorconfig && npm run stylelint",
     "build": "gulp build",
     "start": "gulp",
-    "deploy": "gulp build && gh-pages -d build"
+    "deploy": "gulp build && gh-pages -d dist"
   },
   "browserslist": [
     "last 2 versions",
