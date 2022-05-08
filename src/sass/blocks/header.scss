@@ -4,7 +4,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
   min-height: 71px;
   padding-top: 17px;
   padding-bottom: 7px;
@@ -29,10 +29,6 @@
   &--hidden {
     display: none;
   }
-}
-
-.header__logo {
-  align-self: flex-start;
 }
 
 .header__description {

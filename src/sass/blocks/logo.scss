@@ -1,7 +1,7 @@
 .logo {
-  display: block;
+  display: flex;
   width: 140px;
-  height: 46px;
+  height: 32px;
 
   &:hover {
     opacity: 0.8;
@@ -27,13 +27,13 @@
 
 @media (min-width: 768px) {
   .logo {
-    width: 188px;
-    height: 64px;
+    width: 180px;
+    height: 40px;
   }
 
   .logo__image {
     width: 47px;
-    height: 19px;
+    height: 40px;
   }
 
   .logo__name {
@@ -46,12 +46,12 @@
   .logo {
     display: flex;
     width: 188px;
-    height: 39px;
+    height: 44px;
   }
 
   .logo__image {
-    width: 44px;
-    height: 24px;
+    width: 47px;
+    height: 44px;
   }
 
   .logo__name {
@@ -64,12 +64,12 @@
   .logo {
     display: flex;
     width: 241px;
-    height: 71px;
+    height: 58px;
   }
 
   .logo__image {
     width: 60px;
-    height: 31px;
+    height: 58px;
   }
 
   .logo__name {
