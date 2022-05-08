@@ -43,6 +43,12 @@
     display: none;
   }
 
+  &--close {
+    svg {
+      fill: #554ea0;
+    }
+  }
+
   &:hover:not(:disabled) {
     opacity: 0.8;
   }

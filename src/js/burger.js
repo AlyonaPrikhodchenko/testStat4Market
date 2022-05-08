@@ -9,6 +9,7 @@ function handleMobileChange (l) {
   nav.classList.add("header__nav--hidden");
 
 button.onclick = function () {
+  button.classList.toggle("header__burger--close");
   nav.classList.toggle('header__nav--hidden');
 }
   } else {
