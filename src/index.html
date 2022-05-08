@@ -12,7 +12,7 @@
       <div class="header__top">
         <a class="header__logo logo" href="./index.html">
           <span class="visually-hidden">Переход на главную страницу.</span>
-          <img src="./img/content/logo.svg" width="35" height="18" alt="Логотип stat4market">
+          <img class="logo__image" src="./img/content/logo.svg" width="35" height="18" alt="Логотип stat4market">
           <svg class="logo__name" width="94" height="14" aria-hidden="true" focusable="false">
             <use xlink:href="./img/sprite.svg#stat4market"></use>
           </svg>
@@ -21,19 +21,19 @@
         <nav class="header__nav nav">
           <ul class="nav__list">
             <li class="nav__item">
-              <a class="nav__link" href="#">Аналитика</a></li>
+              <a class="nav__link nav__link--menu" href="#">Аналитика</a></li>
             <li class="nav__item">
               <a class="nav__link" href="#">Обучение</a></li>
           </ul>
           <a class="nav__link nav__link--phone" href="tel:+74994503141"> 8 (499) 450-31-41</a>
         </nav>
         <a class="header__button button" href="./enter.html">
-          <svg width="14" height="14" fill="#ffffff" aria-hidden="true" focusable="false">
+          <svg class="button__line" width="14" height="14" fill="#ffffff" aria-hidden="true" focusable="false">
             <use xlink:href="./img/sprite.svg#enter-line"></use>
           </svg>
           Войти
         </a>
-        <button class="header__burger" type="button">
+        <button class="header__burger header__burger--nojs" type="button">
           <span class="visually-hidden">Открыть меню.</span>
           <svg width="42" height="28" fill="#cf51ce" aria-hidden="true" focusable="false">
             <use xlink:href="./img/sprite.svg#burger"></use>
@@ -53,11 +53,11 @@
     <main class="page__main main">
       <section class="main__courses courses">
         <div class="courses__container container">
-          <h2 class="courses__header">
-            <span>Обучающие курсы</span> для поставщиков на маркетплейсы
+          <h2 class="courses__title">
+            <span class="courses__title courses__title--accent">Обучающие курсы</span> для поставщиков на маркетплейсы
           </h2>
-          <p class="courses__price courses__price--wrapper">
-            от&nbsp;<span class="courses__price courses__price--accent">19 900</span>&nbsp;<span class="courses__price courses__price--currency">₽</span>
+          <p class="courses__price">
+            от&nbsp;<span class="courses__price-accent">19 900</span>&nbsp;<span class="courses__price-currency">₽</span>
           </p>
           <p class="courses__description">
             Обучающие курсы по работе и продвижению на маркетплейсах от практикующих селлеров
@@ -72,10 +72,103 @@
       </section>
 
       <section class="main__analytics analytics container">
-        <h2 class="analytics">
+        <h2 class="analytics__title analytics__title--mobile">
           Как работает модуль Аналитика по API для Wildberries?
         </h2>
+        <h2 class="analytics__title analytics__title--desktop">
+          Небольшая предыстория о том, почему нам можно доверять
+        </h2>
+        <div class="analytics__description">
+          <div class="analytics__image-wrapper">
+            <picture>
+              <source type="image/webp" media="(min-width: 1920px)" srcset="./img/content/phone-image-1920@1x.webp 1x, ./img/content/phone-image-1920@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 1280px)" srcset="./img/content/phone-image-1280@1x.webp 1x, ./img/content/phone-image-1280@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="./img/content/phone-image-768@1x.webp 1x, ./img/content/phone-image-768@2x.webp 2x">
+              <source type="image/webp" srcset="./img/content/phone-image-360@1x.webp 1x, ./img/content/phone-image-360@2x.webp 2x">
+
+              <source media="(min-width: 1920px)" srcset="./img/content/phone-image-1920@1x.png 1x, ./img/content/phone-image-1920@2x.png 2x">
+              <source media="(min-width: 1280px)" srcset="./img/content/phone-image-1280@1x.png 1x, ./img/content/phone-image-1280@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="./img/content/phone-image-768@1x.png 1x, ./img/content/phone-image-768@2x.png 2x">
+              <img class="analytics__image" src="./img/content/phone-image-360@1x.png" srcset="./img/content/phone-image-360@2x.png 2x" loading="lazy" width="270" height="277" alt="Мы поможем разобраться в продвижении.">
+            </picture>
+          </div>
+          <div class="analytics__text-wrapper">
+            <p class="analytics__text">
+              Свой путь в бизнесе мы начали в 2016 г. У нас были свои островные магазины в крупных ТЦ Москвы («Европейский», «Метрополис», «Мега» и др.), а также свой интернет-магазин. Мы накопили большой опыт в продвижении своих товаров за счет многочисленных запусков разных рекламных каналов и работы с блогерами.
+            </p>
+          </div>
+        </div>
+
+        <div class="analytics__description analytics__description--pc">
+          <div class="analytics__image-wrapper">
+            <picture>
+              <source type="image/webp" media="(min-width: 1920px)" srcset="./img/content/pc-image-1920@1x.webp 1x, ./img/content/pc-image-1920@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 1280px)" srcset="./img/content/pc-image-1280@1x.webp 1x, ./img/content/pc-image-1280@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="./img/content/pc-image-768@1x.webp 1x, ./img/content/pc-image-768@2x.webp 2x">
+              <source type="image/webp" srcset="./img/content/pc-image-360@1x.webp 1x, ./img/content/pc-image-360@2x.webp 2x">
+
+              <source media="(min-width: 1920px)" srcset="./img/content/pc-image-1920@1x.png 1x, ./img/content/pc-image-1920@2x.png 2x">
+              <source media="(min-width: 1280px)" srcset="./img/content/pc-image-1280@1x.png 1x, ./img/content/pc-image-1280@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="./img/content/pc-image-768@1x.png 1x, ./img/content/pc-image-768@2x.png 2x">
+              <img class="analytics__image" src="./img/content/pc-image-360@1x.png" srcset="./img/content/pc-image-360@2x.png 2x" loading="lazy" width="270" height="270" alt="Мы поделимся своим опытом.">
+            </picture>
+          </div>
+
+          <div class="analytics__text-wrapper">
+            <p class="analytics__text">
+              Летом 2019 года мы вышли на маркетплейсы и после работы с ними в течение 2 месяцев приняли решение развивать только это направление. И не прогадали. Весь накопленный опыт мы направили на улучшение и продвижение наших брендов.
+            </p>
+            <p class="analytics__text">
+              Пришло время поделится знаниями и лайфхаками, которые будут собраны и доступны в нашей Академии stat4market.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="main__study study container">
+        <h2 class="study__title">
+          Обучение по продажам на маркетплейсах от <a class="study__title-logo" href="#">stat<span>4</span>market</a>
+        </h2>
+        <p class="study__description">
+          «Увеличение реальной прибыли, конкретика и ключевые инструменты, которые дают результат» — на этом тезисе созданы наши курсы
+        </p>
+
+        <ul class="study__list">
+          <li class="study__item study__item--target">
+            <h3 class="study__item-title">
+              Наше обучение построено очень лаконично и просто
+            </h3>
+            <p class="study__item-description">
+              Все занятия короткие по продолжительности для легкого восприятия и понимания. Мы даем в уроках только конкретику, без лишней теории и “воды”.
+            </p>
+          </li>
+          <li class="study__item study__item--site">
+            <h3 class="study__item-title">
+              Ко всем урокам есть дополнительные материалы
+            </h3>
+            <p class="study__item-description">
+              Презентации, краткие инструкции, чек-листы и памятки по работе с маркетплейсами.
+            </p>
+          </li>
+          <li class="study__item study__item--friends">
+            <h3 class="study__item-title">
+              Наше обучение — практико-ориентированное
+            </h3>
+            <p class="study__item-description">
+              Поэтому после прохождения уроков ты будешь выполнять задания, которые помогут тебе закрепить полученные знания на практике.
+            </p>
+          </li>
+          <li class="study__item study__item--makers">
+            <h3 class="study__item-title">
+              Создатели нашей Академии
+            </h3>
+            <p class="study__item-description">
+              Действующие селлеры с большим опытом в продажах на маркетплейсах, эксперты компании stat4market, а также профессиональные лекторы и методологи.
+            </p>
+          </li>
+        </ul>
       </section>
     </main>
+    <script src="./js/burger.js"></script>
 </body>
 </html>

@@ -1,3 +1,53 @@
 .main__courses {
   margin-bottom: 85px;
 }
+
+.main__analytics {
+  margin-bottom: 100px;
+}
+
+.main__study {
+  margin-bottom: 70px;
+}
+
+@media (min-width: 768px) {
+  .main__courses {
+    margin-bottom: 65px;
+  }
+
+  .main__analytics {
+    margin-bottom: 120px;
+  }
+
+  .main__study {
+    margin-bottom: 60px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .main__courses {
+    margin-bottom: 77px;
+  }
+
+  .main__analytics {
+    margin-bottom: 140px;
+  }
+
+  .main__study {
+    margin-bottom: 120px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .main__courses {
+    margin-bottom: 147px;
+  }
+
+  .main__analytics {
+    margin-bottom: 140px;
+  }
+
+  .main__study {
+    margin-bottom: 131px;
+  }
+}

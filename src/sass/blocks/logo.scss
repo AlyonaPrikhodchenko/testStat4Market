@@ -3,7 +3,7 @@
   width: 140px;
   height: 46px;
 
-  &:hover:not(:disabled) {
+  &:hover {
     opacity: 0.8;
   }
 
@@ -12,7 +12,7 @@
     outline-offset: 2px;
   }
 
-  &:active:not(:disabled) {
+  &:active {
     opacity: 0.5;
   }
 }
@@ -21,4 +21,57 @@
   display: block;
   margin-left: auto;
   margin-top: auto;
+}
+
+@media (min-width: 768px) {
+  .logo {
+    width: 188px;
+    height: 64px;
+  }
+
+  .logo__image {
+    width: 47px;
+    height: 19px;
+  }
+
+  .logo__name {
+    width: 126px;
+    height: 30px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .logo {
+    display: flex;
+    width: 188px;
+    height: 39px;
+  }
+
+  .logo__image {
+    width: 44px;
+    height: 24px;
+  }
+
+  .logo__name {
+    width: 126px;
+    height: 30px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .logo {
+    display: flex;
+    width: 241px;
+    height: 71px;
+  }
+
+  .logo__image {
+    width: 60px;
+    height: 31px;
+  }
+
+  .logo__name {
+    width: 163px;
+    height: 39px;
+  }
 }

@@ -7,6 +7,7 @@
   min-height: 36px;
   padding: 4px 20px;
   text-decoration: none;
+  letter-spacing: 0.02em;
   background-color: $color-accent;
   border-radius: 6px;
   cursor: pointer;
@@ -41,5 +42,41 @@
   &--disabled {
     opacity: 0.1;
     pointer-events: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .button {
+    width: 158px;
+    padding: 4px 32px;
+    border-radius: 12px;
+
+    @include fonts (500, 20px, #ffffff, 176%);
+  }
+
+  .button__line {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .button {
+    width: 152px;
+
+    @include fonts (500, 18px, #ffffff, 196%);
+  }
+}
+
+@media (min-width: 1920px) {
+  .button {
+    width: 169px;
+
+    @include fonts (500, 23px, #ffffff, 153%);
+  }
+
+  .button__line {
+    width: 23px;
+    height: 23px;
   }
 }

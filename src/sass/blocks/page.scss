@@ -15,3 +15,25 @@
 .page__header {
   margin-bottom: 5px;
 }
+
+@media (min-width: 768px) {
+  .page__header {
+    margin-bottom: 15px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .page__body {
+    background-image: url("../img/background/ellipse-bg-1280.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}
+
+@media (min-width: 1920px) {
+  .page__body {
+    background-image: url("../img/background/ellipse-bg.svg"), url("../img/background/ellipse-bg-violet.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0, 100% 250px;
+  }
+}

@@ -9,38 +9,28 @@
   padding-top: 44px;
 }
 
-.courses__header {
-  width: 205px;
+.courses__title {
+  width: 61.12%;
   margin: 0;
   margin-bottom: 24px;
 
   @include fonts(700, 26px, $color-general, 150%);
 
-  span {
+  &--accent {
     color: $color-accent;
   }
 }
 
 .courses__price {
-  @include fonts (600, 22px, rgba(51, 26, 47, 0.8), 147%);
+  display: flex;
+  align-items: baseline;
+  width: 77.57%;
+  margin: 0;
+  margin-bottom: 16px;
 
-  &--accent {
-    @include fonts (700, 38px, $color-accent, 145%);
-  }
+  @include fonts  (600, 22px, rgba(51, 26, 47, 0.8), 147%);
 
-  &--currency {
-    @include fonts (400, 30px, rgba(51, 26, 47, 0.8), 100%);
-  }
-
-  &--wrapper {
-    display: flex;
-    align-items: baseline;
-    width: 256px;
-    margin: 0;
-    margin-bottom: 16px;
-  }
-
-  &--wrapper::before {
+  &::before {
     content: "";
     display: block;
     align-self: center;
@@ -49,5 +39,92 @@
     margin-right: 25px;
     background-image: url("../img/icons/spent.svg");
     background-repeat: no-repeat;
+  }
+}
+
+.courses__price-accent {
+  @include fonts (700, 38px, $color-accent, 145%);
+}
+
+.courses__price-currency {
+  @include fonts (400, 30px, rgba(51, 26, 47, 0.8), 100%);
+}
+
+@media (min-width: 768px) {
+  .courses {
+    background-size: 245px 410px;
+    background-position: right 150px;
+  }
+
+  .courses__container {
+    padding-top: 0;
+  }
+
+  .courses__title {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 18px;
+
+    @include fonts(700, 46px, $color-general, 141%);
+
+    &--accent {
+      color: $color-accent;
+    }
+  }
+
+  .courses__description {
+    width: 65.3%;
+
+    @include fonts(400, 20px, rgba(51, 26, 47, 0.8), 160%);
+  }
+}
+
+@media (min-width: 1280px) {
+  .courses {
+    background-image: url("../img/background/superman-desktop.svg");
+    background-size: 459px 459px;
+    background-position: right 40px top;
+    background-repeat: no-repeat;
+  }
+
+  .courses__title {
+    width: 59.25%;
+    margin-bottom: 40px;
+  }
+
+  .courses__price {
+    margin-bottom: 40px;
+  }
+
+  .courses__description {
+    width: 59.25%;
+  }
+}
+
+@media (min-width: 1920px) {
+  .courses {
+    background-size: 620px 604px;
+    background-position: right 195px top;
+  }
+
+  .courses__title {
+    width: 53.73%;
+    margin-bottom: 22px;
+
+    @include fonts(700, 56px, $color-general, 143%);
+
+    &--accent {
+      color: $color-accent;
+    }
+  }
+
+  .courses__price {
+    margin-bottom: 16px;
+  }
+
+  .courses__description {
+    width: 53.73%;
+
+    @include fonts(400, 25px, rgba(51, 26, 47, 0.8), 160%);
   }
 }
