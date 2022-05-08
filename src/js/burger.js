@@ -6,6 +6,7 @@ function handleMobileChange (l) {
   if (mediaQuery.matches) {
   button.classList.remove("header__burger--nojs");
   nav.classList.add("header__nav--js");
+  nav.classList.add("header__nav--hidden");
 
 button.onclick = function () {
   nav.classList.toggle('header__nav--hidden');
