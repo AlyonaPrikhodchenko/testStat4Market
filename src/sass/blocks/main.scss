@@ -40,7 +40,8 @@
 
 @media (min-width: 1920px) {
   .main__courses {
-    margin-bottom: 147px;
+    max-width: 1920px;
+    margin: 0 auto 147px;
   }
 
   .main__analytics {
